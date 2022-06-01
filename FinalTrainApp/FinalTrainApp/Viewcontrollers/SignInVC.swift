@@ -30,22 +30,21 @@ class SignInVC: UIViewController,UNUserNotificationCenterDelegate {
             UserDefaults.standard.set(password,forKey: "password")
             
             let gotoHomeVC = self.storyboard?.instantiateViewController(withIdentifier: "home_vc") as! HomeVC
+            //MARK: 3 Show notification for sign in
             initNotifications()
             self.navigationController?.pushViewController(gotoHomeVC, animated: true)
-            //MARK: 3 Show notification for sign in
-            
         }else{
-            
+            let alert = UIAlertController(title: "Fail to Sign In", message: "Try Again", preferredStyle: .actionSheet)
+            let ok = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(ok)
+            self.present(alert, animated: true)
         }
-        
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         centerNotifications.delegate = self
         print("screen sign in did load")
         initView()
-        initNotifications()
         isSignedIn()
     }
     
@@ -60,21 +59,6 @@ class SignInVC: UIViewController,UNUserNotificationCenterDelegate {
             let password = UserDefaults.standard.string(forKey: "password")
             usernameTF!.text = username
             passwordTF!.text = password
-            let alert = UIAlertController(title: "Alert", message: "Choose", preferredStyle: .actionSheet)
-                    let actionAgree1 = UIAlertAction(title: "Agree1", style: .default){(action) in
-                        self.usernameTF!.text = "Agree"
-                    }
-                    let actionAgree2 = UIAlertAction(title: "Agree2", style: .default){(action) in
-                        self.usernameTF!.text = "Agree"
-                    }
-                    
-                    let actionCancel = UIAlertAction(title: "Cancel", style: .cancel){
-                        (action) in
-                        self.usernameTF!.text = "Cancel"
-                    }
-                    alert.addAction(actionAgree1)
-                    alert.addAction(actionAgree2)
-                    alert.addAction(actionCancel)
             
         }
         
@@ -94,7 +78,7 @@ class SignInVC: UIViewController,UNUserNotificationCenterDelegate {
             let request = UNNotificationRequest(identifier: "Notification ", content: content, trigger:trigger )
             centerNotifications.add(request) {
                 (error) in
-                print("\(error?.localizedDescription)")
+                print("\(error)")
             }
         }
     

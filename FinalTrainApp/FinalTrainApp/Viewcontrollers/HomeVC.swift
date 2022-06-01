@@ -38,7 +38,7 @@ class HomeVC: UIViewController {
                               case .success(let items) :
                                   self.arrUser = items
                                   self.myTable.reloadData()
-                              case .failure(let items):
+                              case .failure(_):
                                   print("errors")
                               }
                           }
@@ -55,7 +55,6 @@ class HomeVC: UIViewController {
     
     //MARK: create #selector object for event of right bar button
     @objc func gotoSignIn(){
-        let gotoSignInVC = self.storyboard?.instantiateViewController(withIdentifier: "sign_in") as! SignInVC
         UserDefaults.standard.removeObject(forKey: "SignIn")
         self.navigationController?.popViewController(animated: true)
     }

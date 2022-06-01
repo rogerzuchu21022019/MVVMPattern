@@ -84,10 +84,10 @@
 		95C767272844BCB8003AFD22 /* FinalTrainApp */ = {
 			isa = PBXGroup;
 			children = (
-				95C7674A2844C2A9003AFD22 /* cells */,
-				95C767412844BF35003AFD22 /* configs_delegate */,
-				95C767402844BF15003AFD22 /* models */,
-				95C7673F2844BF05003AFD22 /* viewcontrollers */,
+				95C7674A2844C2A9003AFD22 /* Cells */,
+				95C767412844BF35003AFD22 /* Configs_delegate */,
+				95C767402844BF15003AFD22 /* Models */,
+				95C7673F2844BF05003AFD22 /* Viewcontrollers */,
 				95C7672E2844BCB8003AFD22 /* Main.storyboard */,
 				95C767342844BCBA003AFD22 /* Assets.xcassets */,
 				95C767362844BCBA003AFD22 /* LaunchScreen.storyboard */,
@@ -97,7 +97,7 @@
 			path = FinalTrainApp;
 			sourceTree = "<group>";
 		};
-		95C7673F2844BF05003AFD22 /* viewcontrollers */ = {
+		95C7673F2844BF05003AFD22 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
 				95C767422844C039003AFD22 /* SignUpVC.swift */,
@@ -105,32 +105,32 @@
 				95C767462844C185003AFD22 /* HomeVC.swift */,
 				95C767482844C1E8003AFD22 /* DetailUserVC.swift */,
 			);
-			path = viewcontrollers;
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
-		95C767402844BF15003AFD22 /* models */ = {
+		95C767402844BF15003AFD22 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				95C7674F2844D34D003AFD22 /* User.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		95C767412844BF35003AFD22 /* configs_delegate */ = {
+		95C767412844BF35003AFD22 /* Configs_delegate */ = {
 			isa = PBXGroup;
 			children = (
 				95C767282844BCB8003AFD22 /* AppDelegate.swift */,
 				95C7672A2844BCB8003AFD22 /* SceneDelegate.swift */,
 			);
-			path = configs_delegate;
+			path = Configs_delegate;
 			sourceTree = "<group>";
 		};
-		95C7674A2844C2A9003AFD22 /* cells */ = {
+		95C7674A2844C2A9003AFD22 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				95C7674B2844C2C8003AFD22 /* UserCells.swift */,
 			);
-			path = cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FA50624C942DB68CC3F29A2E /* Frameworks */ = {
