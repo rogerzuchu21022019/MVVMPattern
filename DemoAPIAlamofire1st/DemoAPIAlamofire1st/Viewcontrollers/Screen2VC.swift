@@ -90,8 +90,6 @@ extension Screen2VC:UITableViewDelegate,UITableViewDataSource{
         print("ok+\(indexPath)")
         let screen3 = storyboard?.instantiateViewController(withIdentifier: "DetailScreenUser") as! DetailScreenUser
         screen3.user = arrUser[indexPath.row]
-        
-        
         self.navigationController?.pushViewController(screen3, animated: true)
         
     }
