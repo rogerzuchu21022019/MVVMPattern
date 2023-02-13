@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9540712928654B61002285CD /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540712828654B61002285CD /* StringExt.swift */; };
+		956C72C6286127330010E1B7 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72C5286127330010E1B7 /* DetailVM.swift */; };
+		956C72C82861273E0010E1B7 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72C72861273D0010E1B7 /* DetailVC.swift */; };
+		956C72CA286127530010E1B7 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956C72C9286127520010E1B7 /* DetailVC.storyboard */; };
+		956C72DA286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 956C72D8286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodeld */; };
+		956C72E3286196CA0010E1B7 /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72E1286196CA0010E1B7 /* CDUser+CoreDataClass.swift */; };
+		956C72E4286196CA0010E1B7 /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72E2286196CA0010E1B7 /* CDUser+CoreDataProperties.swift */; };
+		956C72E7286197430010E1B7 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72E6286197430010E1B7 /* BaseRepository.swift */; };
+		956C72EA286197B20010E1B7 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C72E9286197B20010E1B7 /* UserRepository.swift */; };
+		9597536B28603C020093D650 /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597536A28603C020093D650 /* ImageExt.swift */; };
+		9597536D28603D5D0093D650 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597536C28603D5D0093D650 /* Cell.swift */; };
+		95BC3520285F185C0066F681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC351F285F185C0066F681 /* AppDelegate.swift */; };
+		95BC3522285F185C0066F681 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC3521285F185C0066F681 /* SceneDelegate.swift */; };
+		95BC3524285F185C0066F681 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC3523285F185C0066F681 /* SignInVC.swift */; };
+		95BC3527285F185C0066F681 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BC3525285F185C0066F681 /* HomeVC.storyboard */; };
+		95BC352C285F185E0066F681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BC352B285F185E0066F681 /* Assets.xcassets */; };
+		95BC3538285F18740066F681 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC3537285F18740066F681 /* PersistentStorage.swift */; };
+		95E72EE5285F194A00EC2970 /* SignInSb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E72EE4285F194A00EC2970 /* SignInSb.storyboard */; };
+		95E72EE8285F1B6800EC2970 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72EE7285F1B6800EC2970 /* HomeVC.swift */; };
+		95E72EEA285F26BC00EC2970 /* StoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72EE9285F26BC00EC2970 /* StoryboardExt.swift */; };
+		95E72F1D285F489000EC2970 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F1C285F489000EC2970 /* BaseService.swift */; };
+		95E72F1F285F4B7300EC2970 /* InternetExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F1E285F4B7300EC2970 /* InternetExt.swift */; };
+		95E72F22285F4BF000EC2970 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F21285F4BF000EC2970 /* User.swift */; };
+		95E72F24285F54BF00EC2970 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F23285F54BF00EC2970 /* HomeVM.swift */; };
+		95E72F26285F54CB00EC2970 /* SignInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F25285F54CB00EC2970 /* SignInVM.swift */; };
+		95E72F29285F54ED00EC2970 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F28285F54ED00EC2970 /* BaseViewModel.swift */; };
+		95E72F2B285F54F600EC2970 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F2A285F54F600EC2970 /* BaseViewController.swift */; };
+		95E72F2E285F5C7D00EC2970 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F2D285F5C7D00EC2970 /* UserService.swift */; };
+		95E72F31285F60DA00EC2970 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F30285F60DA00EC2970 /* BaseManager.swift */; };
+		95E72F33285F60EF00EC2970 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E72F32285F60EF00EC2970 /* UserManager.swift */; };
+		C4F034F5E9934F2F235FCB63 /* Pods_MVVMHitachiVantara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E36EF211B376703958DCC95 /* Pods_MVVMHitachiVantara.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18024BA487E745B08D48D9FA /* Pods-MVVMHitachiVantara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMHitachiVantara.debug.xcconfig"; path = "Target Support Files/Pods-MVVMHitachiVantara/Pods-MVVMHitachiVantara.debug.xcconfig"; sourceTree = "<group>"; };
+		1E36EF211B376703958DCC95 /* Pods_MVVMHitachiVantara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMHitachiVantara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9540712828654B61002285CD /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		956C72C5286127330010E1B7 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		956C72C72861273D0010E1B7 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		956C72C9286127520010E1B7 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
+		956C72D9286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMHitachiVantara.xcdatamodel; sourceTree = "<group>"; };
+		956C72E1286196CA0010E1B7 /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		956C72E2286196CA0010E1B7 /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		956C72E6286197430010E1B7 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		956C72E9286197B20010E1B7 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		9597536A28603C020093D650 /* ImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		9597536C28603D5D0093D650 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		95BC351C285F185C0066F681 /* MVVMHitachiVantara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMHitachiVantara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BC351F285F185C0066F681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95BC3521285F185C0066F681 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95BC3523285F185C0066F681 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		95BC3526285F185C0066F681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeVC.storyboard; sourceTree = "<group>"; };
+		95BC352B285F185E0066F681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95BC3530285F185E0066F681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BC3537285F18740066F681 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		95E72EE4285F194A00EC2970 /* SignInSb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSb.storyboard; sourceTree = "<group>"; };
+		95E72EE7285F1B6800EC2970 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		95E72EE9285F26BC00EC2970 /* StoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExt.swift; sourceTree = "<group>"; };
+		95E72F1C285F489000EC2970 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		95E72F1E285F4B7300EC2970 /* InternetExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetExt.swift; sourceTree = "<group>"; };
+		95E72F21285F4BF000EC2970 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95E72F23285F54BF00EC2970 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		95E72F25285F54CB00EC2970 /* SignInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVM.swift; sourceTree = "<group>"; };
+		95E72F28285F54ED00EC2970 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		95E72F2A285F54F600EC2970 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		95E72F2D285F5C7D00EC2970 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		95E72F30285F60DA00EC2970 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		95E72F32285F60EF00EC2970 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		FBF810BEED71770DC8E7A43C /* Pods-MVVMHitachiVantara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMHitachiVantara.release.xcconfig"; path = "Target Support Files/Pods-MVVMHitachiVantara/Pods-MVVMHitachiVantara.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95BC3519285F185C0066F681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F034F5E9934F2F235FCB63 /* Pods_MVVMHitachiVantara.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53B399430727B572164A5775 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18024BA487E745B08D48D9FA /* Pods-MVVMHitachiVantara.debug.xcconfig */,
+				FBF810BEED71770DC8E7A43C /* Pods-MVVMHitachiVantara.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		956C72C4286126F70010E1B7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				956C72C5286127330010E1B7 /* DetailVM.swift */,
+				956C72C72861273D0010E1B7 /* DetailVC.swift */,
+				956C72C9286127520010E1B7 /* DetailVC.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		956C72CF2861910B0010E1B7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				956C72E1286196CA0010E1B7 /* CDUser+CoreDataClass.swift */,
+				956C72E2286196CA0010E1B7 /* CDUser+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		956C72E5286197260010E1B7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				956C72E82861979F0010E1B7 /* User */,
+				956C72E6286197430010E1B7 /* BaseRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		956C72E82861979F0010E1B7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				956C72E9286197B20010E1B7 /* UserRepository.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		956C72EB2861996F0010E1B7 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F32285F60EF00EC2970 /* UserManager.swift */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		95BC3513285F185C0066F681 = {
+			isa = PBXGroup;
+			children = (
+				95BC351E285F185C0066F681 /* MVVMHitachiVantara */,
+				95BC351D285F185C0066F681 /* Products */,
+				53B399430727B572164A5775 /* Pods */,
+				ABC4052BF6309219BF2D9C24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95BC351D285F185C0066F681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95BC351C285F185C0066F681 /* MVVMHitachiVantara.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95BC351E285F185C0066F681 /* MVVMHitachiVantara */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F27285F54D700EC2970 /* Common */,
+				95E72F20285F4BE900EC2970 /* Model */,
+				95E72F19285F483900EC2970 /* Data */,
+				95E72EE6285F1AF600EC2970 /* Extension */,
+				95BC3539285F18B60066F681 /* View */,
+				95BC3536285F18610066F681 /* App */,
+				95BC352B285F185E0066F681 /* Assets.xcassets */,
+				95BC3530285F185E0066F681 /* Info.plist */,
+				956C72D8286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodeld */,
+			);
+			path = MVVMHitachiVantara;
+			sourceTree = "<group>";
+		};
+		95BC3536285F18610066F681 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				95BC351F285F185C0066F681 /* AppDelegate.swift */,
+				95BC3521285F185C0066F681 /* SceneDelegate.swift */,
+				95BC3537285F18740066F681 /* PersistentStorage.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		95BC3539285F18B60066F681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				956C72C4286126F70010E1B7 /* Detail */,
+				95BC353B285F19080066F681 /* Home */,
+				95BC353A285F18BA0066F681 /* SignIn */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95BC353A285F18BA0066F681 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				95BC3523285F185C0066F681 /* SignInVC.swift */,
+				95E72EE4285F194A00EC2970 /* SignInSb.storyboard */,
+				95E72F25285F54CB00EC2970 /* SignInVM.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		95BC353B285F19080066F681 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95BC3525285F185C0066F681 /* HomeVC.storyboard */,
+				95E72EE7285F1B6800EC2970 /* HomeVC.swift */,
+				95E72F23285F54BF00EC2970 /* HomeVM.swift */,
+				9597536C28603D5D0093D650 /* Cell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		95E72EE6285F1AF600EC2970 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95E72EE9285F26BC00EC2970 /* StoryboardExt.swift */,
+				95E72F1E285F4B7300EC2970 /* InternetExt.swift */,
+				9597536A28603C020093D650 /* ImageExt.swift */,
+				9540712828654B61002285CD /* StringExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		95E72F19285F483900EC2970 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				956C72E5286197260010E1B7 /* Repository */,
+				95E72F2F285F60CD00EC2970 /* Manager */,
+				95E72F1B285F484A00EC2970 /* Network */,
+				95E72F1A285F484100EC2970 /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		95E72F1A285F484100EC2970 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				956C72CF2861910B0010E1B7 /* CoreData */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		95E72F1B285F484A00EC2970 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F2C285F5C6700EC2970 /* UserService */,
+				95E72F1C285F489000EC2970 /* BaseService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		95E72F20285F4BE900EC2970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F21285F4BF000EC2970 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95E72F27285F54D700EC2970 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F28285F54ED00EC2970 /* BaseViewModel.swift */,
+				95E72F2A285F54F600EC2970 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95E72F2C285F5C6700EC2970 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				95E72F2D285F5C7D00EC2970 /* UserService.swift */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		95E72F2F285F60CD00EC2970 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				956C72EB2861996F0010E1B7 /* UserManager */,
+				95E72F30285F60DA00EC2970 /* BaseManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		ABC4052BF6309219BF2D9C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E36EF211B376703958DCC95 /* Pods_MVVMHitachiVantara.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95BC351B285F185C0066F681 /* MVVMHitachiVantara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BC3533285F185E0066F681 /* Build configuration list for PBXNativeTarget "MVVMHitachiVantara" */;
+			buildPhases = (
+				EEFC1E71EB610F0582E5EFB3 /* [CP] Check Pods Manifest.lock */,
+				95BC3518285F185C0066F681 /* Sources */,
+				95BC3519285F185C0066F681 /* Frameworks */,
+				95BC351A285F185C0066F681 /* Resources */,
+				4C92832DEAE58FB75113B2EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVVMHitachiVantara;
+			productName = MVVMHitachiVantara;
+			productReference = 95BC351C285F185C0066F681 /* MVVMHitachiVantara.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95BC3514285F185C0066F681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					95BC351B285F185C0066F681 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 95BC3517285F185C0066F681 /* Build configuration list for PBXProject "MVVMHitachiVantara" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95BC3513285F185C0066F681;
+			productRefGroup = 95BC351D285F185C0066F681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95BC351B285F185C0066F681 /* MVVMHitachiVantara */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95BC351A285F185C0066F681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BC352C285F185E0066F681 /* Assets.xcassets in Resources */,
+				95BC3527285F185C0066F681 /* HomeVC.storyboard in Resources */,
+				956C72CA286127530010E1B7 /* DetailVC.storyboard in Resources */,
+				95E72EE5285F194A00EC2970 /* SignInSb.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C92832DEAE58FB75113B2EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMHitachiVantara/Pods-MVVMHitachiVantara-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMHitachiVantara/Pods-MVVMHitachiVantara-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMHitachiVantara/Pods-MVVMHitachiVantara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEFC1E71EB610F0582E5EFB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVMHitachiVantara-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95BC3518285F185C0066F681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E72F1D285F489000EC2970 /* BaseService.swift in Sources */,
+				956C72E3286196CA0010E1B7 /* CDUser+CoreDataClass.swift in Sources */,
+				95E72F24285F54BF00EC2970 /* HomeVM.swift in Sources */,
+				956C72EA286197B20010E1B7 /* UserRepository.swift in Sources */,
+				95E72F31285F60DA00EC2970 /* BaseManager.swift in Sources */,
+				95BC3524285F185C0066F681 /* SignInVC.swift in Sources */,
+				95BC3520285F185C0066F681 /* AppDelegate.swift in Sources */,
+				95E72F2B285F54F600EC2970 /* BaseViewController.swift in Sources */,
+				95E72EE8285F1B6800EC2970 /* HomeVC.swift in Sources */,
+				95BC3538285F18740066F681 /* PersistentStorage.swift in Sources */,
+				9597536B28603C020093D650 /* ImageExt.swift in Sources */,
+				95E72F29285F54ED00EC2970 /* BaseViewModel.swift in Sources */,
+				95E72EEA285F26BC00EC2970 /* StoryboardExt.swift in Sources */,
+				95E72F26285F54CB00EC2970 /* SignInVM.swift in Sources */,
+				9540712928654B61002285CD /* StringExt.swift in Sources */,
+				95E72F2E285F5C7D00EC2970 /* UserService.swift in Sources */,
+				95E72F1F285F4B7300EC2970 /* InternetExt.swift in Sources */,
+				95E72F22285F4BF000EC2970 /* User.swift in Sources */,
+				956C72DA286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodeld in Sources */,
+				95BC3522285F185C0066F681 /* SceneDelegate.swift in Sources */,
+				956C72E7286197430010E1B7 /* BaseRepository.swift in Sources */,
+				95E72F33285F60EF00EC2970 /* UserManager.swift in Sources */,
+				9597536D28603D5D0093D650 /* Cell.swift in Sources */,
+				956C72C6286127330010E1B7 /* DetailVM.swift in Sources */,
+				956C72E4286196CA0010E1B7 /* CDUser+CoreDataProperties.swift in Sources */,
+				956C72C82861273E0010E1B7 /* DetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95BC3525285F185C0066F681 /* HomeVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BC3526285F185C0066F681 /* Base */,
+			);
+			name = HomeVC.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95BC3531285F185E0066F681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95BC3532285F185E0066F681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95BC3534285F185E0066F681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18024BA487E745B08D48D9FA /* Pods-MVVMHitachiVantara.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVVMHitachiVantara/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SignInSb;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInSb;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hitachivantara.MVVMHitachiVantara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95BC3535285F185E0066F681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF810BEED71770DC8E7A43C /* Pods-MVVMHitachiVantara.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVVMHitachiVantara/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SignInSb;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInSb;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hitachivantara.MVVMHitachiVantara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95BC3517285F185C0066F681 /* Build configuration list for PBXProject "MVVMHitachiVantara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BC3531285F185E0066F681 /* Debug */,
+				95BC3532285F185E0066F681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BC3533285F185E0066F681 /* Build configuration list for PBXNativeTarget "MVVMHitachiVantara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BC3534285F185E0066F681 /* Debug */,
+				95BC3535285F185E0066F681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		956C72D8286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				956C72D9286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodel */,
+			);
+			currentVersion = 956C72D9286194A00010E1B7 /* MVVMHitachiVantara.xcdatamodel */;
+			path = MVVMHitachiVantara.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 95BC3514285F185C0066F681 /* Project object */;
+}
